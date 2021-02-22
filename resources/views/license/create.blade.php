@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center align-items-center" style="height: 80vh">
 
     <table id="client_table" class="table table-bordered border-primary table-light me-3" style="width:28rem; display:none">
         <tbody>

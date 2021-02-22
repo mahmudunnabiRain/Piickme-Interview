@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center align-items-center" style="height: 80vh">
     <div class="card border-primary mb-3" style="width: 48rem;">
         <div class="card-header"><strong>Register</strong></div>
             <div class="card-body">
