@@ -57,7 +57,7 @@
         </tbody>
     </table>
 
-    <div class="card border-primary mb-3" style="width: 28rem; max-height:28.3rem">
+    <div class="card border-primary mb-3" style="width: 28rem">
         <div class="card-header"><strong>Create License</strong></div>
             <div class="card-body">
                 @if(session('success'))
