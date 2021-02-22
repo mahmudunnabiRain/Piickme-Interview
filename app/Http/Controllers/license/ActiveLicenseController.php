@@ -24,7 +24,7 @@ class ActiveLicenseController extends Controller
         catch (DecryptException $e) {
             return back()->with('failure', 'Your License Is Invalid.');
         }
-        
+
         $decrypted = explode("+",$decrypted);
 
         if(count($decrypted) != 2){
@@ -45,6 +45,12 @@ class ActiveLicenseController extends Controller
         }
 
         $id = $decrypted[0];
+
+        if(!User::find($id)){
+            return back()->with('failure', 'User Not Registered Yet.');
+        }
+        
+
         $license_for = $decrypted[1];
         $expire_date = new DateTime('now');
 
