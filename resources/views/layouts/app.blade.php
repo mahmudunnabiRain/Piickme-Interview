@@ -27,7 +27,8 @@
                             {{ auth()->user()->first_name }} {{ auth()->user()->last_name }}
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="dropdownMenuLink" style="white-space: nowrap;">
-                            <li><a class="dropdown-item disabled" href="#">Profile</a></li>
+                            <li><h5 class="dropdown-item disabled" href="#"><strong>Profile</strong></h5></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><span class="dropdown-item-text">Id: {{ auth()->user()->id }}</span></li>
                             <li><span class="dropdown-item-text">Email: {{ auth()->user()->email }}</span></li>
                             <li><span class="dropdown-item-text">Phone: {{ auth()->user()->phone_number }}</span></li>

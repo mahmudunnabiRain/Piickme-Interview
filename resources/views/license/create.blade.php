@@ -8,47 +8,51 @@
         <tbody>
             <tr>
                 <th scope="row">First Name</th>
-                <td id="client_first_name"></td>
+                <td id="client_first_name" class="text-break"></td>
             </tr>
             <tr>
                 <th scope="row">Last Name</th>
-                <td id="client_last_name"></td>
+                <td id="client_last_name" class="text-break"></td>
             </tr>
             <tr>
                 <th scope="row">Name of organization</th>
-                <td id="client_organization"></td>
+                <td id="client_organization" class="text-break"></td>
             </tr>
             <tr>
                 <th scope="row">Street</th>
-                <td id="client_street"></td>
+                <td id="client_street" class="text-break"></td>
             </tr>
             <tr>
                 <th scope="row">City</th>
-                <td id="client_city"></td>
+                <td id="client_city" class="text-break"></td>
             </tr>
             <tr>
                 <th scope="row">Upazilla</th>
-                <td id="client_upazilla"></td>
+                <td id="client_upazilla" class="text-break"></td>
             </tr>
             <tr>
                 <th scope="row">District</th>
-                <td id="client_district"></td>
+                <td id="client_district" class="text-break"></td>
             </tr>
             <tr>
                 <th scope="row">State</th>
-                <td id="client_state"></td>
+                <td id="client_state" class="text-break"></td>
             </tr>
             <tr>
                 <th scope="row">Phone</th>
-                <td id="client_phone_number"></td>
+                <td id="client_phone_number" class="text-break"></td>
             </tr>
             <tr>
                 <th scope="row">Email</th>
-                <td id="client_email"></td>
+                <td id="client_email" class="text-break"></td>
             </tr>
             <tr>
                 <th scope="row">License Key</th>
                 <td id="client_license_key" class="text-break"></td>
+            </tr>
+            <tr>
+                <th scope="row">Expire Date</th>
+                <td id="client_expire_date" class="text-break"></td>
             </tr>
         </tbody>
     </table>
@@ -168,6 +172,7 @@
                         $("#client_phone_number").html(response['data'].phone_number);
                         $("#client_email").html(response['data'].email);
                         $("#client_license_key").html(response['data'].license_key);
+                        $("#client_expire_date").html(response['data'].expire_date);
                     }
                 }
             });
